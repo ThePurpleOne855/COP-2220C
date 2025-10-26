@@ -1,0 +1,107 @@
+1- Create a 10x10 Grid
+2- Create the 5 players ship.
+3- Assign Stretch Vertical or Horizontal
+4- Assign a random position for the stretch of the ships but do not generate the ship
+5- Validate that the random position the ship will be generate at will not go over the limit after applying the strech
+6- Validate that once the strech is applied that there is not any enemy ship over that strech
+7- If previous conditions are are met then generate the shit at that position with that stretch
+8- If the condition are not met then repeat from step 4,
+9- After Generating all the ships start the game
+
+
+Other things to keep in mind:
+
+1- Save unfishined game:
+    So if the player quits their session I will save the game state to a binary file
+    When the player decides to play again but the quit the session earlier they will be able to recover this session using B. or They can start a new session pressing A.
+
+2- Showing Scores the lowest the score the better. I will show the 10 best scores
+
+
+Functions to create:
+
+1- A function to save the game state
+2- A function to load the game.
+3- A function to place the ships
+4- A function to verify if it is a valid placement
+5- A function to fire a missile
+6- A function to check if it hit
+7- A function to update the board
+8- check if the ship is sunk, a ship will be sunk when all the coordinates it strectches from are hit.
+9- A function to show the main menu
+10- A function to start a new game
+11- Running the main game through a loop
+
+
+Struct: Create a ship struct 
+
+################################################################
+
+Perfect! Let’s break your **4-day plan** into manageable steps so you can finish **Valencia Battleship** on time. Each day focuses on a specific part of the project, gradually building up to the full game.
+
+---
+
+## **📅 4-Day Development Plan**
+
+### **Day 1 – Setup & Ship Placement**
+
+**Goal:** Have the board, ships, and random placement working.
+**Tasks:**
+
+* Create a **10×10 board**.
+* Define the **Ship struct/class** with `name, symbol, size, orientation, coords, hits, sunk`.
+* Create a list of **5 ships** with sizes and symbols.
+* Implement **random orientation** (H/V) for each ship.
+* Implement **random starting position**.
+* Implement **`is_valid_placement()`** to check bounds and overlap.
+* Implement **`place_ships()`** function to place all ships correctly.
+  **Deliverable:** Ships are randomly placed on the board, no overlaps, all within bounds.
+
+---
+
+### **Day 2 – Player Actions & Board Updates**
+
+**Goal:** Player can fire missiles, and the board updates correctly.
+**Tasks:**
+
+* Implement **`fire_missile()`** to handle player input coordinates.
+* Implement **`check_hit()`** to detect if a missile hits a ship.
+* Implement **`update_board()`** to mark `"H"` for hit, `"M"` for miss.
+* Implement **`check_if_sunk()`** to mark ships as sunk when all coordinates are hit.
+* Test **hit/miss/sunk** logic with board display.
+  **Deliverable:** Player can fire missiles, board updates correctly, ships can be sunk.
+
+---
+
+### **Day 3 – Game Flow & Main Menu**
+
+**Goal:** Implement menu, game loop, and basic gameplay flow.
+**Tasks:**
+
+* Implement **`show_main_menu()`** → New Game / Resume / Top Scores / Quit.
+* Implement **`start_new_game()`** to initialize board and ships.
+* Implement **`game_loop()`** to repeat: show board → fire missile → update board → check if all sunk.
+* Track **missiles used**.
+* Implement **game end** logic → show final board, display message.
+  **Deliverable:** Complete playable game without saving/resume or scores.
+
+---
+
+### **Day 4 – Persistence & Top Scores**
+
+**Goal:** Add save/load functionality and track top scores.
+**Tasks:**
+
+* Implement **`save_game()`** → save board, ships, hits, and missiles used.
+* Implement **`load_game()`** → resume unfinished game.
+* Implement **top 10 scores** → save/load from `topTenScores.txt`.
+* Sort scores by **lowest missiles used**.
+* Test **quit and resume**, ensure game state restores correctly.
+* Test **score saving** and **display top 10**.
+  **Deliverable:** Full game with save/resume, top scores, and proper end-of-game handling.
+
+---
+
+If you want, I can make a **one-page table with each day + functions + deliverables** that’s **super easy to follow** while coding.
+
+Do you want me to do that?
