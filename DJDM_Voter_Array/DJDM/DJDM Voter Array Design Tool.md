@@ -12,8 +12,9 @@ Step by Step Design:
 9. The Computer Weight Statement / Category (Fat, Fit, Skinny) when outputting the values in the list.  ( Skinny Males < 125, Skinny Females  < 100 pounds, O or U skinny weight < 115) (Fit Male  weight >= 125 and weight <= 225, Fit Female  weight >= 100 and and weight <= 150) (O or U weight weight 115 >= 115 and weight <= 200 pounds) (Fat Male weight >  225) (Fat Females weight > 150) (O or U fat weight > 200)
 10. Create an array for each field in the list.
 11. Create a simulation array with 500 spaces of 3 digits numbers from 000 to 999.
-12. Run this simulation and compare to each of the voters favorite numbers and input the number of matches in the matches field.
-13. Give the user a way to stop the program.
+12. Calculate the Voter weight classication at run time and print it with the voter records
+13. Run this simulation and compare to each of the voters favorite numbers and input the number of matches in the matches field.
+14. Give the user a way to stop the program.
 
 
 
